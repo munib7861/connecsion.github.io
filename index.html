@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#333">
+    <title>Connecsion | Digital Signage Solution</title>
+    <link rel="shortcut icon" href="assets/img/favicon.png?v=3">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="assets/css/preload.min.css">
+    <link rel="stylesheet" href="assets/css/plugins.min.css">
+    <link rel="stylesheet" href="assets/css/style.blue-grey-700.min.css">
+    <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  </head>
+  <body>
+    <div id="ms-preload" class="ms-preload">
+      <div id="status">
+        <div class="spinner">
+          <div class="dot1"></div>
+          <div class="dot2"></div>
+        </div>
+      </div>
+    </div>
+    <div class="ms-site-container">
+      <!-- Modal -->
+      <div class="modal modal-primary" id="ms-account-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog animated zoomIn animated-3x" role="document">
+          <div class="modal-content">
+            <div class="modal-header d-block shadow-2dp no-pb">
+              <button type="button" class="close d-inline pull-right mt-2" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="zmdi zmdi-close"></i></span></button>
+              <div class="modal-title text-center">
+                <span class="ms-logo ms-logo-white ms-logo-sm mr-1">C</span>
+                <h3 class="no-m ms-site-title">Connecsion<span>Style</span></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md navbar-static ms-navbar navbar-mode ms-navbar-white">
+        <div class="container container-full">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img src="assets/img/logo.png" alt="Connecsion" style="width: 160px;">   
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="ms-navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown active">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnHome" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="home">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnWorks" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="page">How it works</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnPortal" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="component">Online-Portal</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnAbout" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="component">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnService" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="component">Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnPricing" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="component">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle animated fadeIn animation-delay-7 navBtnContact" data-toggle="dropdown"  role="button" aria-haspopup="true" aria-expanded="false" data-name="blog">Contact us</a>
+              </li>
+            </ul>
+          </div>
+          <a href="javascript:void(0)" class="ms-toggle-left btn-navbar-menu"><i class="zmdi zmdi-menu"></i></a>
+        </div> <!-- container -->
+      </nav>
+      <div id="Home" class="ms-hero ms-hero-material">
+        <span class="ms-hero-bg"></span>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-7">
+              <div id="carousel-hero" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="carousel-caption">
+                      <div class="ms-hero-material-text-container">
+                        <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
+                          <h1 class="animated fadeInLeft animation-delay-15 font-smoothing"><strong>A Simple Digital Signage Solution</strong></h1>
+                          <!-- <h2 class="animated fadeInLeft animation-delay-18">The most customizable <span class="color-warning">material design</span> template.</h2> -->
+                        </header>
+                        <ul class="ms-hero-material-list">
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-18">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-warning shadow-3dp"><i class="zmdi zmdi-tv-list"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-19">A digital signage solution that lets you create and control your content on one, or many, screens.</div>
+                          </li>
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-20">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-tv"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-21">You can control your screens from anywhere in the world.</div>
+                          </li>
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-22">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-remote-control"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-23">Connecsion's device is plug & play. So just connect it with your screen and it is ready.</div>
+                          </li>
+                        </ul>
+                      </div> <!-- ms-hero-material-text-container -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <div class="ms-hero-material-text-container">
+                        <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
+                          <h1 class="animated fadeInLeft animation-delay-15"><strong>Easy To Manage Your Content</strong></h1>
+                          <!-- <h2 class="animated fadeInLeft animation-delay-18">Unlimited combinations to create <span class="color-warning">unique designs</span> .</h2> -->
+                        </header>
+                        <ul class="ms-hero-material-list">
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-18">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-info shadow-3dp"><i class="zmdi zmdi-view-dashboard"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-19">You can easily manage what shows on your Digital Signage screens.</div>
+                          </li>
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-20">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-royal shadow-3dp"><i class="zmdi zmdi-cloud-upload"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-21">You can upload any audio, video or image file as content for your signage.</div>
+                          </li>
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-22">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-youtube-play"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-23">You can also use any Youtube video link for your signage.</div>
+                          </li>
+                        </ul>
+                      </div> <!-- ms-hero-material-text-container -->
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="carousel-caption">
+                      <div class="ms-hero-material-text-container">
+                        <header class="ms-hero-material-title animated slideInLeft animation-delay-5">
+                          <h1 class="animated fadeInLeft animation-delay-15">Easy To Schedule Your <strong>Signage</strong>.</h1>
+                          <!-- <h2 class="animated fadeInLeft animation-delay-18">There will soon be a version for <span class="color-warning">Bootstrap 4</span>.</h2> -->
+                        </header>
+                        <ul class="ms-hero-material-list">
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-18">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-danger shadow-3dp"><i class="zmdi zmdi-calendar-alt"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-19">Set different schedules for one or multiple screens, in seconds.</div>
+                          </li>
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-20">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-info shadow-3dp"><i class="zmdi zmdi-calendar-note"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-21">Show different content during different <strong>hours</strong> or <strong>days</strong>.</div>
+                          </li>
+                          <li class="">
+                            <div class="ms-list-icon animated zoomInUp animation-delay-22">
+                              <span class="ms-icon ms-icon-circle ms-icon-xlg color-success shadow-3dp"><i class="zmdi zmdi-calendar-close"></i></span>
+                            </div>
+                            <div class="ms-list-text animated fadeInRight animation-delay-23">Set schedules active or inactive, remotely from the online portal.</div>
+                          </li>
+                        </ul>
+                      </div> <!-- ms-hero-material-text-container -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="ms-hero-material-buttons">
+                <a href="javascript:void(0);" class="btn btn-warning btn-raised animated fadeInLeft animation-delay-24 mr-2"><i class="zmdi zmdi-settings"></i>GET YOUR PLAN NOW!</a>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-5">
+              <div class="ms-hero-img animated zoomInUp animation-delay-30">
+                <img src="assets/img/mock-imac-material2.png" alt="" class="img-fluid">
+                <div id="carousel-hero-img" class="carousel carousel-fade slide" data-ride="carousel" data-interval="3000">
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="ms-hero-img-slider carousel-item active">
+                      <img src="assets/img/hero1.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="ms-hero-img-slider carousel-item">
+                      <img src="assets/img/hero3.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="ms-hero-img-slider carousel-item">
+                      <img src="assets/img/hero2.png" alt="" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- container -->
+      </div> <!-- ms-hero ms-hero-black -->
+      <div id="works" class="container mt-4">
+        <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4"><strong>Connecsion-Cloud based Digital Signage Solution</strong></h2>
+        <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Connecsion, <span class="color-primary">offers a complete end to end solution,</span> from hardware-software to content management service, that allows you to educate,entertain and upsell your most important audience-the people who are your business.</p>
+        <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4"><strong>Getting started in just 3 easy steps!</strong></h2>
+        <div class="row">
+          <div class="ms-feature col-xl-4 col-lg-4 col-md-4 card wow flipInX animation-delay-4">
+            <div class="text-center card-body">
+              <span class="ms-icon ms-icon-circle ms-icon-xxlg color-info"><i class="zmdi zmdi-input-hdmi"></i></span>
+              <h4 class="color-info">Step 1</h4>
+              <img src="assets/img/connecsionBanner.png" alt="" style="width: 100%;">
+              <p class="">Connect Connecsion Device to your TV via HDMI port.</p>
+            </div>
+          </div>
+          <div class="ms-feature col-xl-4 col-lg-4 col-md-4 card wow flipInX animation-delay-8">
+            <div class="text-center card-body">
+              <span class="ms-icon ms-icon-circle ms-icon-xxlg color-warning"><i class="zmdi zmdi-view-web"></i></span>
+              <h4 class="color-warning">Step 2</h4>
+              <img src="assets/img/laptop_layout2_mockup.png" alt="" style="width: 100%;">
+              <p class="">Login to your Connecsion account, choose template, add content and link it to your TV screen.</p>
+            </div>
+          </div>
+          <div class="ms-feature col-xl-4 col-lg-4 col-md-4 card wow flipInX animation-delay-10">
+            <div class="text-center card-body">
+              <span class="ms-icon ms-icon-circle ms-icon-xxlg color-success"><i class="zmdi zmdi-calendar-check"></i></span>
+              <h4 class="color-success">Step 3</h4>
+              <img src="assets/img/laptop_layout3_mockup.png" alt="" style="width: 100%;">
+              <p class="">Create a schedule for your screens to run different content based on time of the day and day of the week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- container -->
+      <div id="portal" class="wrap wrap-mountain mt-6">
+        <div class="container">
+          <h2 class="text-center text-light mb-6 wow fadeInDown animation-delay-5"><strong>Connecsion-Online Application Portal</strong></h2>
+          <div class="row">
+            <div class="col-lg-6 order-lg-2 mb-4  center-block">
+              <img src="assets/img/devices.png" alt="" class="img-fluid center-block wow zoomIn animation-delay-12 ">
+            </div>
+            <div class="col-lg-6 order-lg-1 pr-6">
+              <p class="wow fadeInLeft animation-delay-6">Connecsion's online portal makes it easier than ever for you to create and put meaningful content on my screen, in any location. Use it to manage one screen, or a thousand, from anywhere in the world.</p>
+              <p class="wow fadeInLeft animation-delay-7">Connecsion's digital signage application also enables you to schedule content for different hours or days for your screens effortlessly from the web, using your computer or smartphone.</p>
+              <p class="wow fadeInLeft animation-delay-8">With this comprehensive application portal, you can upload images, audios and videos in our cloud and use it as content for your signage.</p>
+              <div class="text-center">
+                <a href="https://account.connecsion.io" class="btn btn-warning btn-raised mr-1 wow flipInX animation-delay-14"><i class="zmdi zmdi-chart-donut"></i> Application Portal </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="container mt-6">
+        <h1 class="font-light">More Engagement with less effort</h1>
+        <!-- <p class="lead color-primary">— Intelligent apps that help you do your best work. </p> -->
+        <div class="panel panel-light panel-flat">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs nav-tabs-transparent indicator-primary nav-tabs-full nav-tabs-4" role="tablist">
+            <li class="nav-item wow fadeInDown animation-delay-6" role="presentation"><a href="#windows" aria-controls="windows" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-settings-square"></i> <span class="d-none d-md-inline">Automated content</span></a></li>
+            <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#macos" aria-controls="macos" role="tab" data-toggle="tab" class="nav-link withoutripple active"><i class="zmdi zmdi-eye"></i> <span class="d-none d-md-inline">Improve your visibility</span></a></li>
+            <li class="nav-item wow fadeInDown animation-delay-2" role="presentation"><a href="#linux" aria-controls="linux" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-trending-up"></i> <span class="d-none d-md-inline">Grow your audience</span></a></li>
+            <li class="nav-item wow fadeInDown animation-delay-4" role="presentation"><a href="#android" aria-controls="android" role="tab" data-toggle="tab" class="nav-link withoutripple"><i class="zmdi zmdi-mood"></i> <span class="d-none d-md-inline">White Glove Service</span></a></li>
+          </ul>
+          <div class="panel-body">
+            <!-- Tab panes -->
+            <div class="tab-content mt-4">
+              <div role="tabpanel" class="tab-pane fade" id="windows">
+                <div class="row">
+                  <div class="col-lg-6 order-lg-2">
+                    <img src="assets/img/mock31.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
+                  </div>
+                  <div class="col-lg-6 order-lg-1">
+                    <h3 class="text-normal animated fadeInUp animation-delay-4">Save time with automated content</h3>
+                    <p class="lead lead-md animated fadeInUp animation-delay-6">Automatically integrate existing content with no extra work.</p>
+                    <p class="lead lead-md animated fadeInUp animation-delay-7">Display interactive social media feeds, announcements and promotions, news, emergency alerts and more.</p>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane active show fade" id="macos">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img src="assets/img/mock21.png" alt="" class="img-fluid wow animated zoomIn animation-delay-8">
+                  </div>
+                  <div class="col-lg-6">
+                    <h3 class="text-normal wow animated fadeInUp animation-delay-4">Improve your visibility</h3>
+                    <p class="lead lead-md  wow animated fadeInUp animation-delay-6">Filter, approve and monitor content.</p>
+                    <p class="lead lead-md wow animated fadeInUp animation-delay-7">Proof of play and role-based user permissions make it easy for you and your team to display brand-safe content in multiple locations.</p>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="linux">
+                <div class="row">
+                  <div class="col-lg-6 order-lg-2">
+                    <img src="assets/img/mock41.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
+                  </div>
+                  <div class="col-lg-6 order-lg-1">
+                    <h3 class="text-normal animated fadeInUp animation-delay-4">Grow your audience</h3>
+                    <p class="lead lead-md animated fadeInUp animation-delay-6">Dynamic content changes in real time based on weather, location, news update.</p>
+                    <!-- <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p> -->
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="android">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img src="assets/img/mock51.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
+                  </div>
+                  <div class="col-lg-6">
+                    <h3 class="text-normal animated fadeInUp animation-delay-4">White Glove Service</h3>
+                    <p class="lead lead-md  animated fadeInUp animation-delay-6">Provide us the schedule for the entire year and let us take care of the rest for you.</p>
+                    <!-- <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p> -->
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="ios">
+                <div class="row">
+                  <div class="col-lg-6 order-lg-2">
+                    <img src="assets/img/mock3.png" alt="" class="img-fluid animated zoomIn animation-delay-8">
+                  </div>
+                  <div class="col-lg-6 order-lg-1">
+                    <h3 class="text-normal animated fadeInUp animation-delay-4">Bring ideas together faster</h3>
+                    <p class="lead lead-md animated fadeInUp animation-delay-6">Create documents, spreadsheets and presentations from anywhere. Share them with teammates and work together on the same file, at the same time.</p>
+                    <p class="lead lead-md animated fadeInUp animation-delay-7">sing your work is easy with one login for everything you do. Administrative controls offer two-step verification to enhance security for the whole company.</p>
+                    <div class="">
+                      <a href="javascript:void(0)" class="btn btn-info btn-raised animated zoomIn animation-delay-10"><i class="zmdi zmdi-info"></i> More info</a>
+                      <a href="javascript:void(0)" class="btn btn-danger btn-raised mr-1 animated zoomIn animation-delay-12"><i class="zmdi zmdi-chart-donut"></i> Action here </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
+      <div id="services" class="wrap ms-hero-bg-info ms-hero-img-meeting ms-bg-fixed mb-6 mt-2">
+        <div class="container">
+          <h2 class="text-center color-white no-mt mb-6 wow fadeInUp">Our Services</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+              <div class="ms-icon-feature wow flipInX animation-delay-4">
+                <div class="ms-icon-feature-icon">
+                  <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white"><i class="fas fa-photo-video"></i></span>
+                </div>
+                <div class="ms-icon-feature-content">
+                  <h4 class="color-warning">Digital Content service</h4>
+                  <p class="color-white">Choose from one of our standard content creation services or allow us to customize digital content service for you.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+              <div class="ms-icon-feature wow flipInX animation-delay-4">
+                <div class="ms-icon-feature-icon">
+                  <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white"><i class="fas fa-laptop"></i></span>
+                </div>
+                <div class="ms-icon-feature-content">
+                  <h4 class="color-warning">Cloud based management console</h4>
+                  <p class="color-white">Easy to use cloud based management console allows you to monitor and manage all devices from anywhere in the world.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 mb-2">
+              <div class="ms-icon-feature wow flipInX animation-delay-4">
+                <div class="ms-icon-feature-icon">
+                  <span class="ms-icon ms-icon-lg ms-icon-inverse ms-icon-white"><i class="fas fa-cloud-upload-alt"></i></span>
+                </div>
+                <div class="ms-icon-feature-content">
+                  <h4 class="color-warning">Multimedia on cloud</h4>
+                  <p class="color-white">Upload your multi media content, e.g image,video and music for content creation on the cloud.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="pricing" class="container mt-6">
+        <div class="text-center mb-4">
+          <h2 class="uppercase color-primary">See our subscription plans</h2>
+          <p class="lead uppercase">Surprise with our unique features</p>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-4">
+            <div class="price-table price-table-info wow zoomInUp animation-delay-2">
+              <header class="price-table-header">
+                <span class="price-table-category">Gold</span>
+                <h3><sup>$</sup>200 <sub>/mo.</sub></h3>
+              </header>
+              <div class="price-table-body">
+                <ul class="price-table-list">
+                  <li><i class="zmdi zmdi-devices"></i> 4 Devices</li>
+                  <li><i class="zmdi zmdi-cloud"></i> 1 GB</li>
+                  <li><i class="zmdi zmdi-comment-text"></i> This plan is great to start, you can have 4 digital signages based on your size of choice up and running in no time.</li>
+                </ul>
+                <div class="text-center">
+                  <a href="javascript:void(0)" class="btn btn-info btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="price-table price-table-success prominent wow zoomInDown animation-delay-2">
+              <header class="price-table-header">
+                <span class="price-table-category">Platinum</span>
+                <h3><sup>$</sup>400 <sub>/mo.</sub></h3>
+              </header>
+              <div class="price-table-body">
+                <ul class="price-table-list">
+                  <li><i class="zmdi zmdi-devices"></i> 10 Devices</li>
+                  <li><i class="zmdi zmdi-cloud"></i> 4GB</li>
+                  <li><i class="zmdi zmdi-comment-text"></i> This plan is great for medium size organizations. Plan includes 10 Connecsion devices which means you can create group of devices.</li>
+                </ul>
+                <div class="text-center">
+                  <a href="javascript:void(0)" class="btn btn-success btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="price-table price-table-warning wow zoomInUp animation-delay-2">
+              <header class="price-table-header">
+                <span class="price-table-category">Enterprise</span>
+                <!-- <h3><sup>$</sup>0.00 <sub>/mo.</sub></h3> -->
+                <img src="assets/img/123.png" alt="" style="width: 85px; margin: 3px;">
+              </header>
+              <div class="price-table-body">
+                <ul class="price-table-list">
+                  <li><i class="zmdi zmdi-devices"></i> Multiple devices</li>
+                  <li><i class="zmdi zmdi-cloud"></i> Storage for your files and content.</li>
+                  <li><i class="zmdi zmdi-comment-text"></i> This plan is great choice for larger organizations. We would like you to contact us via email and we will get in touch with you to understand your needs.</li>
+                </ul>
+                <div class="text-center">
+                  <a href="javascript:void(0)" class="btn btn-warning btn-raised navBtnContact"><i class="zmdi zmdi-cloud-download"></i> Contact Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--container -->
+      <div class="wrap wrap-danger mt-6">
+        <h2 class="text-center no-m">WHITE GLOVE SERVICE</h2>
+        <h3 class="text-center no-m"><strong>Content Creation</strong></h3>
+        <div class="container mt-6">
+          <div class="row no-gutters">
+            <div class="col-lg-4">
+              <div class="price-table price-table-info wow zoomInUp animation-delay-2">
+                <header class="price-table-header">
+                  <span class="price-table-category">Bronze</span>
+                  <h3><sup>$</sup>200 <sub>/mo.</sub></h3>
+                </header>
+                <div class="price-table-body">
+                  <ul class="price-table-list">
+                    <li><i class="zmdi zmdi-image"></i> 4 Designs</li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="btn btn-info btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="price-table price-table-success prominent wow zoomInDown animation-delay-2">
+                <header class="price-table-header">
+                  <span class="price-table-category">Silver</span>
+                  <h3><sup>$</sup>400 <sub>/mo.</sub></h3>
+                </header>
+                <div class="price-table-body">
+                  <ul class="price-table-list">
+                    <li><i class="zmdi zmdi-image"></i> 10 Designs</li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="btn btn-success btn-raised"><i class="zmdi zmdi-cloud-download"></i> Get Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="price-table price-table-warning wow zoomInUp animation-delay-2">
+                <header class="price-table-header">
+                  <span class="price-table-category">Pro.</span>
+                  <!-- <h3><sup>$</sup>99.99 <sub>/mo.</sub></h3> -->
+                  <img src="assets/img/123.png" alt="" style="width: 85px; margin: 3px;">
+                </header>
+                <div class="price-table-body">
+                  <ul class="price-table-list">
+                    <li><i class="zmdi zmdi-image"></i> Multiple Designs</li>
+                  </ul>
+                  <div class="text-center">
+                    <a href="javascript:void(0)" class="btn btn-warning btn-raised navBtnContact"><i class="zmdi zmdi-cloud-download"></i> Contact Now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-6">
+        <h2 class="text-center color-primary mb-4">Digital Signage that helps you achieve your business golas</h2>
+        <div class="owl-dots"></div>
+        <div class="owl-carousel owl-theme">
+          <div class="card animation-delay-6">
+            <div class="withripple zoom-img">
+              <a href="javascript:void()"><img src="assets/img/menuboard.png" alt="..." class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="color-primary">Increase Revenue</h3>
+              <p>Digital signage offers show management opportunities for increasing revenues through sponserships and exhibitor sales.</p>
+            </div>
+          </div>
+          <div class="card card-dark-inverse animation-delay-8">
+            <div class="withripple zoom-img">
+              <a href="javascript:void()"><img src="assets/img/conference-room.jpg" alt="..." class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="">Maximize Workflow</h3>
+              <p>Adding digital displays around conference rooms can let employees know what’s happening and what’s coming up with an integrated real-time calendar.</p>
+            </div>
+          </div>
+          <div class="card animation-delay-10">
+            <div class="withripple zoom-img">
+              <a href="javascript:void()"><img src="assets/img/scheduling-signage.jpg" alt="..." class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="color-primary">Flexible For Scheduling</h3>
+              <p>Digital signage allows flexible scheduling to show different messages throughout the lifetime of the show.</p>
+            </div>
+          </div>
+          <div class="card animation-delay-6">
+            <div class="withripple zoom-img">
+              <a href="javascript:void()"><img src="assets/img/education.jpg" alt="..." class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="color-primary">Educate Your Students</h3>
+              <p>Digital signage in educational institute is a quick and cost-effective way to make information available to both the school staff and the student body.</p>
+            </div>
+          </div>
+          <div class="card card-dark-inverse animation-delay-8">
+            <div class="withripple zoom-img">
+              <a href="javascript:void()"><img src="assets/img/staff.jpg" alt="..." class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="">Communicate With Your Staff</h3>
+              <p>Digital Signage works just as well for corporate communication as it does customer communication.</p>
+            </div>
+          </div>
+          <div class="card animation-delay-10">
+            <div class="withripple zoom-img">
+              <a href="javascript:void()"><img src="assets/img/promote.png" alt="..." class="img-fluid"></a>
+            </div>
+            <div class="card-body">
+              <h3 class="color-primary">Promote an Event</h3>
+              <p>Are you hosting an open house? Special event? Maybe a celebrity guest? Let people know about it on your disgital displays.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="wrap">
+        <div class="ms-hero-page-override ms-hero-img-team ms-hero-bg-primary">
+          <div class="container">
+            <div class="text-center">
+              <h1
+                class="no-m ms-site-title color-white center-block ms-site-title-lg mt-2 animated zoomInDown animation-delay-5">
+                Contact Us</h1>
+              <p
+                class="lead lead-lg color-light text-center center-block mt-2 mw-800 text-uppercase fw-300 animated fadeInUp animation-delay-7">
+                <i class="color-info-light zmdi zmdi-email mr-1"></i> <a href="mailto:info@connecsion.io" style="color: #fff;">info@connecsion.io</a> <br><i class="color-royal-light zmdi zmdi-phone mr-1"></i>+1 678-650-8408</p>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card card-hero animated fadeInUp animation-delay-7">
+            <div class="card-body">
+              <form class="form-horizontal">
+                <fieldset class="container">
+                  <div class="form-group row">
+                    <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-9">
+                      <input type="text" class="form-control" id="inputName" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Email</label>
+                    <div class="col-lg-9">
+                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Subject</label>
+                    <div class="col-lg-9">
+                      <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="textArea" class="col-lg-2 control-label">Message</label>
+                    <div class="col-lg-9">
+                      <textarea class="form-control" rows="3" id="textArea" placeholder="Your message..."></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group row justify-content-end">
+                    <div class="col-lg-10">
+                      <button type="button" class="btn btn-raised btn-primary">Send Message</button>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="ms-footer" style="background-color: #353535">
+        <div class="container">
+          <p>Copyright &copy; Connecsion 2020</p>
+        </div>
+      </footer>
+      <div class="btn-back-top">
+        <a href="#" data-scroll id="back-top" class="btn-circle btn-circle-primary btn-circle-sm btn-circle-raised "><i class="zmdi zmdi-long-arrow-up"></i></a>
+      </div>
+    </div> <!-- ms-site-container -->
+    <div class="ms-slidebar sb-slidebar sb-left sb-style-overlay" id="ms-slidebar">
+      <div class="sb-slidebar-container">
+        <header class="ms-slidebar-header">
+          
+          <div class="ms-slidebar-title">
+            <div class="ms-slidebar-t">
+              <img src="assets/img/logo1.png" alt="" style="max-width: 240px;">
+            </div>
+          </div>
+        </header>
+        <ul class="ms-slidebar-menu" id="slidebar-menu">
+          <li class="card navBtnHome" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-home"></i> Home </a>
+          </li>
+          <li class="card navBtnWorks" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-format-list-bulleted"></i> How it works </a>
+          </li>
+          <li class="card navBtnPortal" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-laptop-mac"></i> Online Portal </a>
+          </li>
+          <li class="card navBtnAbout" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-info"></i> About us </a>
+          </li>
+          <li class="card navBtnService" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-settings"></i> Services </a>
+          </li>
+          <li class="card navBtnPricing" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-money"></i> Pricing </a>
+          </li>
+          <li class="card navBtnContact" role="tab">
+            <a role="button" href="#" >
+              <i class="zmdi zmdi-email"></i> Contact us </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
