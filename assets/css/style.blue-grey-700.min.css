@@ -12622,7 +12622,8 @@ a.img-thumbnail:hover,a.img-thumbnail:focus {
 
 .ms-hero.ms-hero-material {
   color: #f5f5f5;
-  background-color: black;
+  /* background-color: black; */
+  background-color: #7b7a7a;
   min-height: 450px;
   position: relative;
   width: 100%;
@@ -12694,7 +12695,8 @@ a.img-thumbnail:hover,a.img-thumbnail:focus {
   position: absolute;
   display: block;
   content: "";
-  background-color: #1b2428;
+  /* background-color: #1b2428; */
+  background-color: #808080;
   height: 290%;
   width: 71%;
   bottom: -140%;
@@ -12712,7 +12714,8 @@ a.img-thumbnail:hover,a.img-thumbnail:focus {
   position: absolute;
   display: block;
   content: "";
-  background-color: #263137;
+  /* background-color: #263137; */
+  background-color: #d3d3d3;
   height: 470%;
   width: 46%;
   bottom: -232%;
