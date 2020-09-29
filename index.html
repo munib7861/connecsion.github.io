@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="assets/css/preload.min.css">
     <link rel="stylesheet" href="assets/css/plugins.min.css">
     <link rel="stylesheet" href="assets/css/style.blue-grey-700.min.css">
-    <link rel="stylesheet" href="assets/css/width-boxed.min.css" id="ms-boxed" disabled="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
   </head>
   <body>
@@ -553,35 +552,37 @@
         <div class="container">
           <div class="card card-hero animated fadeInUp animation-delay-7">
             <div class="card-body">
-              <form class="form-horizontal">
+              <form id="myForm" role="form" class="form-horizontal" name="contactForm">
                 <fieldset class="container">
                   <div class="form-group row">
                     <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Name</label>
                     <div class="col-lg-9">
-                      <input type="text" class="form-control" id="inputName" placeholder="Name">
+                      <input type="text" name="name" class="form-control" id="inputName" placeholder="Name">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Email</label>
                     <div class="col-lg-9">
-                      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                      <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="inputEmail" autocomplete="false" class="col-lg-2 control-label">Subject</label>
                     <div class="col-lg-9">
-                      <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+                      <input type="text" name="subject" class="form-control" id="inputSubject" placeholder="Subject">
                     </div>
                   </div>
                   <div class="form-group row">
                     <label for="textArea" class="col-lg-2 control-label">Message</label>
                     <div class="col-lg-9">
-                      <textarea class="form-control" rows="3" id="textArea" placeholder="Your message..."></textarea>
+                      <textarea class="form-control" name="message" rows="3" id="textArea" placeholder="Your message..."></textarea>
                     </div>
                   </div>
                   <div class="form-group row justify-content-end">
                     <div class="col-lg-10">
-                      <button type="button" class="btn btn-raised btn-primary">Send Message</button>
+                      <button id="submitBtn" type="button" class="btn btn-raised btn-primary">Send Message</button>
+                      <div id="failMsg" class="error-message">Oops...Something is wrong!</div>
+                      <div id="successMsg" class="sent-message">Your message has been sent. Thank you!</div>
                     </div>
                   </div>
                 </fieldset>
@@ -644,5 +645,93 @@
     <script src="assets/js/plugins.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <script src="assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script>
+      $(function() {
+        $("form[name='contactForm']").validate({
+          rules: {
+              name: {
+                required: true,
+                minlength: 4
+              },
+              email: {
+                required: true,
+                email: true
+              },
+              subject: {
+                required: true,
+                minlength: 8
+              },
+              message: {
+                required: true,
+              }
+            },
+            // Specify validation error messages
+            messages: {
+              name: {
+                required: "Please enter your name",
+                minlength: "Please enter at least 4 chars"
+              },
+              email: "Please enter a valid email address",
+              subject: {
+                required: "Please enter subject",
+                minlength: "Please enter at least 8 chars of subject"
+              },
+              message: {
+                required: "Please write something for us"
+              },
+              
+            },
+        });
+      });
+      $("#submitBtn").click(function (e) {
+        e.preventDefault();
+        const name = $("#inputName").val();
+        const email = $("#inputEmail").val();
+        const subject = $("#inputSubject").val();
+        const message = $("#textarea").val();
+        
+        if ($("#myForm").valid()) {
+          $("#loadingIcon").show();
+          $.ajax({
+            url: 'SendEmail.php',
+            method: 'POST',
+            dataType: 'json',
+            data:{
+              name: name,
+              email: email,
+              subject: subject,
+              message: message,
+            },
+            success: function(response) {
+              $("#loadingIcon").hide();
+              $("#myForm")[0].reset();
+              if (response.status == "success") {
+                $("#successMsg").show();
+                setTimeout(function() { 
+                  $("#successMsg").fadeOut();
+                }, 10000);
+              } else {
+                $("#failMsg").show();
+                setTimeout(function() { 
+                  $("#failMsg").fadeOut();
+                }, 10000);
+              }
+              console.log(response);
+            },
+            error: function(xhr) {
+              $("#loadingIcon").hide();
+              $("#failMsg").show();
+              setTimeout(function() { 
+                $("#failMsg").fadeOut();
+              }, 10000);
+              console.log("error");
+              $("#myForm")[0].reset();
+              console.log(xhr.responseText);
+            }
+          });
+        }
+      });
+  </script>
   </body>
 </html>
